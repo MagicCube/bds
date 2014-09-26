@@ -1,0 +1,140 @@
+.VehicleListView
+{
+	position: relative;
+	cursor: default;
+}
+
+.VehicleListView #header
+{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	height: 50px;
+	left: 0;
+	right: 0;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.2); 
+}
+
+.VehicleListView #body
+{
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+.VehicleListView table
+{
+	width: 100%;
+	table-layout: fixed;
+}
+
+.VehicleListView #header table tr
+{
+	height: 50px;
+	background: #1f2c3d;
+}
+
+.VehicleListView #header table tr td
+{
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+
+
+
+
+.VehicleListView #body table tr
+{
+	cursor: pointer;
+	height: 62px;
+}
+
+.VehicleListView #body table tr:nth-child(even)
+{
+	background: #1f2c3d;
+}
+
+.VehicleListView #body table tr td
+{
+	color: #669fe0;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 16px;
+}
+
+
+
+.VehicleListView table tr td#status
+{
+	background: url(images/table_v_line.png);
+	background-repeat: repeat-y;
+}
+
+
+
+
+
+.VehicleListView #body table tr td
+{
+	position: relative;
+}
+
+
+.VehicleListView #body table tr td#line span
+{
+	display: block;
+	color: black;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-family: calibri;
+	border-radius: 50%;
+	position: absolute;
+	left: 55px;
+	top: 17px;
+}
+
+.VehicleListView #body table tr td#line
+{
+	background-image: url(images/up.png);
+	background-repeat: no-repeat;
+	background-position: 28px center;
+}
+.VehicleListView #body table tr td#line.up
+{
+	background-image: url(images/up.png);
+}
+.VehicleListView #body table tr td#line.down
+{
+	background-image: url(images/down.png);
+}
+
+.VehicleListView #body table tr.ontime #status
+{
+	color: #83ec49;
+}
+.VehicleListView #body table tr.delayed1 #status
+{
+	color: #ffb129;
+}
+.VehicleListView #body table tr.delayed2 #status
+{
+	color: #ffb129;
+}
+.VehicleListView #body table tr.delayed3 #status, .VehicleListView #body table tr.maintenance #status
+{
+	color: #ff2e2a;
+}
+
+
+
+
+
+.VehicleListView .VehiclePopup
+{
+	background
+}

@@ -1,0 +1,144 @@
+.ChatView
+{
+	position: relative;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+}
+
+.ChatView *
+{
+	font-family: Calibri;
+}
+
+.ChatView > #header
+{
+	height: 44px;
+	line-height: 22px;
+}
+
+.ChatView > #header > #name
+{
+	color: #1b2f4f;
+	font-size: 15px;
+	font-weight: bold;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 12px;
+}
+
+.ChatView > #header > #time
+{
+	color: #888888;
+	text-align: center;
+	background: url(images/chart_view_line.png) no-repeat center center;
+}
+
+.ChatView > #content
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 55px;
+	bottom: 47px;
+	padding: 16px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+.ChatView > #footer
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 46px;
+	bottom: 0;
+	border-radius: 5px;
+	background: #a9a9aa;
+}
+
+.ChatView > #footer > input
+{
+	position: absolute;
+	display: inline-block;
+	left: 8px;
+	top: 8px;
+	width: 390px;
+	bottom: 8px;
+	border: none;
+	color: black;
+	padding-left: 8px;
+	border-radius: 4px;
+	background: #efefef;
+}
+
+.ChatView > #footer > #send
+{
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	width: 62px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	color: #1a3050;
+}
+
+
+
+
+
+
+
+
+.ChatView > #content > .message
+{
+	position: relative;
+	margin-top: 12px;
+}
+
+.ChatView > #content > .message > .bubble
+{
+	position: absolute;
+	min-width: 50px;
+	max-width: 240px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	background-color: #1b2f4f;
+}
+
+.ChatView > #content > .message.crew > .bubble
+{
+	left: 0;
+}
+
+.ChatView > #content > .message.operator > .bubble
+{
+	background: #8c8c8c;
+	right: 0;
+}
+
+
+
+.ChatView > #content > .message > .bubble > #tail
+{
+	position: absolute;
+	width: 9px;
+	height: 18px;
+	bottom: 5px;
+	background-repeat: no-repeat;
+}
+.ChatView > #content > .message.crew > .bubble > #tail
+{
+	left: -9px;
+	background-image: url(images/chat_view_bubble_crew.png);
+}
+
+
+.ChatView > #content > .message.operator > .bubble > #tail
+{
+	right: -9px;
+	background-image: url(images/chat_view_bubble_operator.png);
+}

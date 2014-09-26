@@ -1,0 +1,44 @@
+.ClockView
+{
+	position: relative;
+	color: #1fccc7;
+	width: 280px;
+	height: 55px;
+}
+
+.ClockView #time
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #1fccc7;
+	font-size: 55px;
+	line-height: 55px;
+	text-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.ClockView #date
+{
+	position: absolute;
+	right: 0;
+	width: 135px;
+	bottom: -2px;
+	color: #1fccc7;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.ClockView #weather
+{
+	position: absolute;
+	top: 0;
+	right: 15px;
+	color: #3cd6ea;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 35px;
+	text-align: right;
+	background: url(images/weather.png) no-repeat 20px center;
+}

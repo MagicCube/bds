@@ -1,0 +1,230 @@
+.MapView
+{
+	position: relative;
+}
+
+.MapView .mapbox-control-info-right
+{
+	visibility: hidden;
+}
+
+
+
+
+
+.MapView .leaflet-popup-content *
+{
+	color: black;
+}
+
+
+
+
+.leaflet-popup-content .stop #desc
+{
+	font-weight: bold;
+}
+.leaflet-popup-content .stop #number
+{
+	color: gray;
+	font-size: smaller;
+}
+.leaflet-popup-content .stop #dir
+{
+	color: gray;
+	font-size: smaller;
+}
+
+
+
+
+.MapView #legend
+{
+	display: block;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	position: absolute;
+	width: 245px;
+	background: rgba(255, 255, 255, 0.8);
+	list-style: none;
+	right: 16px;
+	bottom: 16px;
+	padding: 0;
+	margin: 0;
+}
+
+.MapView #legend li
+{
+	margin: 0;
+	padding: 0;
+	width: 80px;
+	height: 20px;
+	line-height: 20px;
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+}
+
+.MapView #legend li #line
+{
+	display: block;
+	position: absolute;
+	background: black;
+	width: 12px;
+	height: 3px;
+	left: 12px;
+	top: 11px;
+}
+
+.MapView #legend li #text
+{
+	position: absolute;
+	display: block;
+	font-size: 12px;
+	color: black;
+	white-space: nowrap;
+	left: 30px;
+	top: 2px;
+}
+
+
+
+
+
+
+.MapView .vehiclePopup .leaflet-popup-content-wrapper
+{
+	border-radius: 0;
+	background: transparent;
+	border: none;
+	background: rgba(35, 49, 66, 0.75);
+}
+
+.MapView .vehiclePopup .leaflet-popup-close-button
+{
+	z-index: 9999;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content
+{
+	width: 100%;
+	margin: 0;
+	border: none;
+}
+
+.MapView .vehiclePopup .leaflet-popup-tip
+{
+	background: rgba(35, 49, 66, 0.75);
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > #header
+{
+	height: 32px;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > #header > #routeNumber
+{
+	width: 40px;
+	height: 32px;
+	line-height: 32px;
+	color: #2f1a05;
+	background: black;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > #header > #plateNumber
+{
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	right: 0;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul
+{
+	padding: 0;
+	margin: 0;
+	display: block;
+	list-style: none;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > li
+{
+	position: relative;
+	color: white;
+	display: block;
+	padding: 0;
+	padding-left: 50px;
+	padding-right: 10px;
+	margin: 0;
+	line-height: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: 12px center;
+	white-space: nowrap;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #stop
+{
+	background-image: url(images/stop.png);
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #crew
+{
+	background-image: url(images/crew.png);
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #load
+{
+	background-image: url(images/load.png);
+}
+
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #warning
+{
+	display: none;
+	cursor: pointer;
+	background-color: #bc4850;
+	background-image: url(images/warning.png);
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #warning > div
+{
+	color: #fcee21;
+	background: url(images/arrow.png) no-repeat right;
+}
+
+.MapView .vehiclePopup .leaflet-popup-content > ul > #tel
+{
+	background-image: url(images/tel.png);
+}
+
+
+
+
+.MapView > #fullScreen
+{
+	cursor: pointer;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+	width: 42px;
+	height: 42px;
+	background-repeat: no-repeat;
+	z-index: 9999999;
+}
+.MapView.fullScreen > #fullScreen
+{
+	background-image: url(images/map_view_normalize.png);
+}
+.MapView > #fullScreen
+{
+	background-image: url(images/map_view_maximize.png);
+}

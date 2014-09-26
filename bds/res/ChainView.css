@@ -1,0 +1,164 @@
+.ChainView{	
+	font-family: 微软雅黑;
+	background: url(images/background.png);
+	overflow: hidden;
+}
+
+.ChainView #legendDiv{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 250px;
+	height: 160px;
+}
+
+.ChainView .row{
+	position: relative;
+	top: 5px;
+	left: 1px;
+	height: 40px;
+}
+
+.ChainView #colorschema{
+	margin-top: -9px;
+	vertical-align: middle;
+}
+
+.ChainView #passenger{
+	margin-top: -9px;
+	margin-left: -8px;
+	vertical-align: middle;
+}
+
+.ChainView .text{
+	display: inline-block;
+	height: 40px;
+	color: #808080;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.ChainView >#container > .button{
+	position: absolute;	
+	bottom: 50px;
+	right: 50px;
+	height: 57px;
+	width: 112px;
+	border-radius: 8px;
+	background: #304454;
+	text-align: center;
+	line-height: 57px;
+	cursor: pointer;
+	font-size: 30px;
+	color: #B3B3B3;
+}
+
+.ChainView >#container > #closeBtn 
+{
+	position: absolute;	
+	bottom: 50px;
+	left: 50px;
+	height: 58px;
+	width: 100px;
+	border-radius: 8px;
+	background: url(images/back.png);
+	cursor: pointer;
+	color: #B3B3B3;
+}
+
+
+.ChainView >#container > .button.selected{
+	background: #0b0c0f;
+	color: #00ffff;
+}
+
+.ChainView >#container > svg > .axis > path
+{
+	fill: none;
+	stroke: #00cccc;
+	stroke-width: 10px;
+}
+
+.ChainView >#container > svg > .axis > .tick > line
+{
+	stroke : #00ffff;
+	stroke-width: 1px;
+	fill-opacity: 0.9;
+}
+
+
+.ChainView >#container > svg > .axis > .tick > text
+{
+	fill: #cccccc;
+	font-size: 12px;
+}
+
+.ChainView >#container > svg > .arc {
+	stroke: #ccc;
+	stroke-width: 0.5;
+	fill-opacity: .67;
+}
+
+.ChainView >#container > #selectPanel #humanItem
+{
+	position: absolute;
+    top:  119.65 ;
+    left: 121.27;
+    width: 60;
+    height: 67;
+    background: url(images/passenger.png);
+    z-index: 99999,
+}
+
+.ChainView .line{
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;		
+	font-weight: bold;
+	color: black;
+}
+
+.ChainView .car{
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	background: url(images/bus.png) no-repeat;
+}
+
+.ChainView .loadfactor{
+	position: absolute;
+	width: 140px;
+	height: 80px;
+	background: url(images/loadfactor.png) no-repeat;	
+}
+
+.ChainView .delay{
+	position: relative;
+	top: 24px;
+	display: block;
+	color: #cccccc;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+
+.ChainView #upItem #count
+{
+	color: white;
+	font-weight: bold;
+	font-family: calibri;
+	position: absolute;
+	font-size: 14px;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	top: 12px;
+	left: 123px;
+	overflow: hidden;
+	white-space: nowrap;
+}

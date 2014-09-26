@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="mx/debug.js"></script>
+</head>
+
+<body style="background: #202020; margin: 50px;">
+
+</body>
+
+<script>
+$import("bds.ui.App");
+$import("bds.ui.view.ChatView");
+
+mx.whenReady(function()
+{    
+    $offline = (mx.urlParams.offline == "true");
+    var view = new bds.ui.view.ChatView();
+    $(document.body).append(view.$container);
+    
+    view.appendMessage({ speaker: "crew", text: "Hi!" });
+});
+</script>
+</html>

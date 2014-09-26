@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="mx/debug.js"></script>
+</head>
+
+<body>
+	<div id=top><h1 onclick='_switchOffline();' style='cursor:pointer'>Operations Control Center</h1></div>
+	
+	<div id=body>
+		<div id=map></div>
+		<div id=frequencyPanel>
+			<h2>Frequency</h2>
+			<ul id=switch></ul>
+			<div id="lists"></div>
+		</div>
+	</div>
+	
+	<div id=bottom>
+		<div id=chart></div>
+	</div>
+</body>
+
+<script>
+$import("bds.ui.App");
+
+mx.whenReady(function()
+{
+    $offline = (mx.urlParams.offline == "true");
+    bds.ui.app = new bds.ui.App();
+    // Or you can try this if you want to customize the root element of the app
+    // bds.ui.app = new bds.ui.App({ $element: $("body") });
+
+    var args = { };
+    bds.ui.app.run(args);
+});
+
+
+function _switchOffline()
+{
+    if ($offline)
+    {
+        window.location.href = $mappath("~/bds/index.html");
+    }
+    else
+    {
+        window.location.href = $mappath("~/bds/index.html?offline=true");
+    }
+}
+</script>
+</html>

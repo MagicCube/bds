@@ -1,0 +1,110 @@
+.PassengersChartView
+{
+}
+
+.PassengersChartView text
+{
+    font-family: 'Calibri';
+    fill: #929ba8;
+}
+
+.PassengersChartView .title
+{
+    fill: white;
+    font-family: 'Century Gothic';
+}
+
+.PassengersChartView .subtitle
+{
+    fill: #929ba8;
+}
+
+.PassengersChartView .legend
+{
+    border: 1px solid blue;
+}
+
+.PassengersChartView .xaxis path
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.PassengersChartView .xaxis line
+{
+    fill: none;
+    stroke: #445668;
+    shape-rendering: crispEdges;
+}
+
+.PassengersChartView .yaxis path
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.PassengersChartView .yaxis line
+{
+    fill: none;
+    stroke: none;
+    shape-rendering: crispEdges;
+}
+
+.PassengersChartView .grid
+{
+    stroke: #445668;
+    stroke-widht: 1.5px;
+}
+
+.PassengersChartView .bubble
+{
+    fill: rgba(245, 194, 50, 0.6);
+}
+
+.PassengersChartView .bubble text
+{
+    fill: #1d232c;
+    font-size: 18px;
+}
+
+.PassengersChartView .historical_area
+{
+    fill: #82fef1;
+    opacity: 0.2;
+}
+
+.PassengersChartView .historical_line
+{
+    stroke: #82fef1;
+    stroke-width: 1.5px;
+    opacity: 0.8;
+    fill: none;
+}
+
+.PassengersChartView .realtime_area
+{
+    fill: #f6c233;
+    opacity: 0.2;
+}
+
+.PassengersChartView .realtime_line
+{
+    stroke: #f6c233;
+    stroke-width: 1.5px;
+    opacity: 0.8;
+    fill: none;
+}
+
+.PassengersChartView .forecast
+{
+    stroke: #f6c233;
+    stroke-width: 1.5px;
+    stroke-dasharray: 5 5;
+    opacity: 0.8;
+    fill: none;
+}
+
+
+

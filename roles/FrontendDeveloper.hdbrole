@@ -1,0 +1,14 @@
+role sap.traffic.bds.roles::FrontendDeveloper {
+	catalog sql object "SYS"."REPOSITORY_REST": EXECUTE;
+
+	
+	catalog analytic privilege :"_SYS_BI_CP_ALL"; 
+	
+	package sap.traffic.bds: REPO.READ;
+	
+	package sap.traffic.bds: REPO.EDIT_NATIVE_OBJECTS;
+	package sap.traffic.bds: REPO.ACTIVATE_NATIVE_OBJECTS;
+	package sap.traffic.bds: REPO.MAINTAIN_NATIVE_PACKAGES;
+	
+
+}

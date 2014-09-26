@@ -1,0 +1,172 @@
+*
+{
+	color: white;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', Calibri, Verdana, 'Helvetica Neue', 'BBAlpha Sans', 'S60 Sans', Arial, sans-serif;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+}
+
+*:focus { outline: none; }
+
+::-webkit-scrollbar
+{
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    border-radius: 5px;
+}
+ 
+::-webkit-scrollbar-thumb
+{
+    border-radius: 12px;
+    background: rgba(91,165,192,0.8);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive
+{
+	background: rgba(91,165,192,0.3);
+}
+::-webkit-scrollbar-track-piece
+{
+	background: rgba(74, 93, 125, 0.4);
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body
+{
+    overflow: hidden;
+}
+
+a
+{
+    color: blue;
+}
+
+img
+{
+    border: none;
+}
+
+input
+{
+	
+}
+
+.mx-app
+{
+	background: #1e222d;
+}
+
+.mx-app > #top
+{
+	position: absolute;
+	height: 100px;
+	left: 0;
+	right: 0;
+	background: url(images/logo.png) no-repeat;
+	background-color: #11111d;
+	background-position: 17px center;
+}
+
+.mx-app > #top > h1
+{
+	width: 100%;
+	color: #3cd6ea;
+	position: absolute;
+	line-height: 100px;
+	font-size: 42px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.mx-app > #body
+{
+	position: absolute;
+	top: 100px;
+	bottom: 320px;
+	left: 0;
+	right: 0;
+}
+
+.mx-app > #body > #frequencyPanel
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 60%;
+	right: 0;
+	padding: 14px;
+}
+
+.mx-app > #body > #frequencyPanel > h2
+{
+	font-weight: normal;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+}
+
+.mx-app > #body > #frequencyPanel > #lists
+{
+	position: absolute;
+	left: 14px;
+    right: 0;
+    top: 110px;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.mx-app > #bottom
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 320px;
+	bottom: 0;
+}
+
+
+
+
+
+
+.mx-app > #body > #frequencyPanel > #search
+{
+	display: block;
+	color: #78e8de;
+	border: none;
+	border-radius: 8px;
+	background: #11111d;
+	position: absolute;
+	width: 45%;
+	height: 40px;
+	line-height: 24px;
+	top: 54px;
+	right: 12px;
+	padding-left: 12px;
+}
+
+.mx-app > #body > #frequencyPanel > #search.empty
+{
+	color: #585e68;
+	background-image: url(images/search.png);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+	padding-left: 30px;
+}

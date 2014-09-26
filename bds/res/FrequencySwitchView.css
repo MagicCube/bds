@@ -1,0 +1,37 @@
+.FrequencySwitchView
+{
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 10px;
+	margin-left: 0;
+}
+
+.FrequencySwitchView li
+{
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	margin-right: 10px;
+	width: 160px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+}
+
+.FrequencySwitchView li a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+	color: #1b222c;
+	background: #50545f;
+	border-radius: 5px;
+}
+
+.FrequencySwitchView li.selected a
+{
+	font-weight: bold;
+	color: #78e8de;
+	background: #090911;
+}

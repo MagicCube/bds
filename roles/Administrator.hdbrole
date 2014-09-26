@@ -1,0 +1,10 @@
+role sap.traffic.bds.roles::Administrator 
+	extends role sap.hana.xs.lm.roles::Administrator,
+				 sap.hana.xs.admin.roles::HTTPDestAdministrator,
+				 sap.hana.xs.admin.roles::RuntimeConfAdministrator,
+				 sap.hana.xs.sqlcc::Administrator,
+				 sap.traffic.bds.roles::BackendDeveloper,
+				 sap.traffic.bds.roles::FrontendDeveloper 
+{
+	
+}
